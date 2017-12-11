@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.example.TodoListExampleTodoList.controller.TodoList">
+	<Page title="Todo List">
+		<headerContent>
+		    <Button id="__button0" icon="sap-icon://add-activity" press="onAddTodo" />
+		</headerContent>
+		<content>
+			<List noDataText="Drop list items here" id="todoList" items="{todoList>/todos}">
+				<items>
+					<CustomListItem class="item" type="Active" id="__item3">
+						<content>
+							<HBox width="100%" id="__hbox0" alignContent="Center" alignItems="Start" justifyContent="SpaceBetween">
+								<items>
+									<Text class="item_text" text="{todoList>text}" id="__text8"/>
+									<CheckBox selected="{todoList>completed}"/>
+								</items>
+							</HBox>
+						</content>
+					</CustomListItem>
+				</items>
+			</List>
+		</content>
+		<footer>
+			<Toolbar width="100%" id="__toolbar1">
+				<content>
+					<ToolbarSpacer id="__spacer0"/>
+					<SegmentedButton id="__button1" selectedKey="all" select="onFilterSelect">
+						<items>
+							<SegmentedButtonItem text="All" key="all"/>
+							<SegmentedButtonItem text="Active" key="active"/>
+							<SegmentedButtonItem text="Completed" key="completed"/>
+						</items>
+					</SegmentedButton>
+				</content>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

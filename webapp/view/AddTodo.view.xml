@@ -1,0 +1,22 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.example.TodoListExampleTodoList.controller.AddTodo">
+	<Page title="Add Todo" showNavButton="true" navButtonPress="onNavBack">
+		<content>
+		    <form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="__form0">
+		        <form:content>
+		            <Label required="true" text="Text" id="__label0"/>
+		            <Input width="100%" id="textInput"/>
+		            <Label text="Completed" />
+		            <CheckBox selected="false" id="completedChekbox"/>
+		        </form:content>
+		    </form:SimpleForm>
+		</content>
+	<footer>
+	    <Toolbar width="100%" id="__toolbar1">
+	        <content>
+	            <ToolbarSpacer id="__spacer0"/>
+	            <Button text="Save" id="__button0" press="onSave" icon="sap-icon://save"/>
+	        </content>
+	    </Toolbar>
+	</footer>
+	</Page>
+</mvc:View>

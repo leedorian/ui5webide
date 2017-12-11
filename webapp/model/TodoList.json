@@ -1,0 +1,20 @@
+{
+	"todos":[
+		{
+			"text":"Go shopping",
+			"completed":false
+		},
+		{
+			"text":"Eat out",
+			"completed":false
+		},
+		{
+			"text":"Go to cinema",
+			"completed":false
+		},
+		{
+			"text":"Pay Off Credit Cards",
+			"completed":false
+		}
+	]
+}
